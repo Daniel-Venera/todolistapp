@@ -1,8 +1,6 @@
 <template>
   <div>
     <todos></todos>
-    <todos></todos>
-    <todos></todos>
   </div>
 </template>
 <script>
