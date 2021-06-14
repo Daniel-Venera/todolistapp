@@ -4,7 +4,7 @@
 			<h1>Todos</h1>
 			<input type="text" class="new-todo" placeholder="Add task" v-model="newTodo" @keyup.enter="add()">
 		</header>
-		<div class="main">
+		<div class="main" >
 			<input id="toggle-all" type="checkbox" class="toggle-all" v-model='allDone' >
             <label for="toggle-all" >Mark all as complete</label>
 			<ul class="todo-list">
@@ -33,7 +33,9 @@
 	</section>
 </template>
 <script>
+import store from './TodosStore'
 export default {
+	store: store,
 	data(){
 		return{
 			todos: [],
